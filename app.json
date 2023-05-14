@@ -31,11 +31,15 @@
 
         "BOT_TOKEN": {
 
+      "value":"5924735820:AAGDPiM3DuYmkXEGUNpsoWQxPd3qrcep4Qg",
+
             "description": "Your Bot token from @Botfather"
 
         },
 
         "API_ID": {
+
+      "value":"29410389",
 
             "description": "Your API_ID from https://my.telegram.org/apps"
 
@@ -43,11 +47,15 @@
 
         "API_HASH": {
 
+      "value":"0c716764715886f6641477ffbb63e1ee",
+
             "description": "Your API_HASH from https://my.telegram.org/apps"
 
          },
 
          "GROUPS": {
+
+      "value":"-1001936874635",
 
             "description": "Telegram User group ids"
 
@@ -55,7 +63,19 @@
     
          "AUTH_USERS": {
 
+      "value":"5917311887",
+
              "description": "id's of the telegram users, who you want to allow for multitasking - downloading multiple links at once! In heroku separate the ids by space. (don't put commas. Only separate each of the id's with space"
+
+        },
+
+    "OWNER_ID": {
+
+      "description": "who will use this bot",
+
+      "value":"5917311887",
+
+      "required": false
 
         }
 
