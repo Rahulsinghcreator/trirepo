@@ -29,26 +29,23 @@ import os
 
 bot = Client(
     "bot",
-    bot_token=os.environ.get("BOT_TOKEN"),
-    api_id=int(os.environ.get("API_ID")),
-    api_hash=os.environ.get("API_HASH")
-)
-auth_users = [ int(chat) for chat in os.environ.get("AUTH_USERS").split(",") if chat != '']
-sudo_users = auth_users
-sudo_groups = [ int(chat) for chat in os.environ.get("GROUPS").split(",")  if chat != '']
+    bot_token= "5983625767:AAErph7O3wOh4aMheR22eMC8A4UxXK_kSFg",
+    api_id= 29410389,
+    api_hash= "0c716764715886f6641477ffbb63e1ee")
+
 
 @bot.on_message(filters.command(["start"])& ~filters.edited)
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text("Hello im txt file downloader\nPress /pyro to download links listed in a txt file in the format **Name:link**\n\nBot made by PRATIK")
 
-@bot.on_message(filters.command(["cancel"]))
+@bot.on_message(filters.command(["cancel"])& ~filters.edited)
 async def cancel(_, m):
     editable = await m.reply_text("Canceling All process Plz wait")
     global cancel
     cancel = True
     await editable.edit("cancled")
     return
-@bot.on_message(filters.command("restart"))
+@bot.on_message(filters.command("restart")& ~filters.edited)
 async def restart_handler(_, m):
     await m.reply_text("Restarted!", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
