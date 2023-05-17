@@ -29,12 +29,12 @@ import os
 
 bot = Client(
     "bot",
-    bot_token= "5983625767:AAErph7O3wOh4aMheR22eMC8A4UxXK_kSFg",
+    bot_token= "5934025701:AAEodA8kirXNlM1dPCfr1LIERLciEf9IkPM",
     api_id= 29410389,
     api_hash= "0c716764715886f6641477ffbb63e1ee")
 
 
-@bot.on_message(filters.command(["start"])& ~filters.edited)
+@bot.on_message(filters.command(["mute"])& ~filters.edited)
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text("Hello im txt file downloader\nPress /pyro to download links listed in a txt file in the format **Name:link**\n\nBot made by PRATIK")
 
@@ -50,7 +50,7 @@ async def restart_handler(_, m):
     await m.reply_text("Restarted!", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
-@bot.on_message(filters.command(["pyro"])& ~filters.edited)
+@bot.on_message(filters.command(["nali"])& ~filters.edited)
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text("Send txt file**")
     input: Message = await bot.listen(editable.chat.id)
