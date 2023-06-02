@@ -284,7 +284,7 @@ async def account_login(bot: Client, m: Message):
             else:
                 res = list(out.keys())[list(out.values()).index(ytf)]
 
-            name = f'{str(count).zfill(3)}) {name1} {res}'
+            name = f'{name1}'
 
 
             if "youtu" in url:
