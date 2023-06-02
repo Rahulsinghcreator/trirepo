@@ -351,7 +351,7 @@ async def account_login(bot: Client, m: Message):
                         continue
                 else:
                     res_file = await helper.download_video(url,cmd, name)
-                    filename = res_file
+                    filename = file
                     await helper.send_vid(bot, m,cc,filename,thumb,name,prog)
                     count+=1
                     time.sleep(1)
