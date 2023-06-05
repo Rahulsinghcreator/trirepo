@@ -27,10 +27,11 @@ import re
 import os
 # import pycurl
 
-bot = Client("bot",
-             bot_token=6077054491:AAHZvYzs1Hdv59edzpVKc0gxoxeqvrA_f-E",
-             api_id= 29410389,
-             api_hash= "0c716764715886f6641477ffbb63e1ee")
+bot = Client(
+    "bot",
+    bot_token= "6077054491:AAHZvYzs1Hdv59edzpVKc0gxoxeqvrA_f-E",
+    api_id= 29410389,
+    api_hash= "0c716764715886f6641477ffbb63e1ee")
 
 
 @bot.on_message(filters.command(["mute"])& ~filters.edited)
