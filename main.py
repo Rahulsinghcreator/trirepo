@@ -29,7 +29,7 @@ import os
 
 bot = Client(
     "bot",
-    bot_token= "6287707118:AAE87nuB8hGQNpJNnC75OXgRDfXoBWJ2yiw",
+    bot_token= "5876861641:AAESVCeE4DBtRcoZAOOyHLy2ZWbFAjMrEtQ",
     api_id= 29410389,
     api_hash= "0c716764715886f6641477ffbb63e1ee")
 
@@ -309,8 +309,8 @@ async def account_login(bot: Client, m: Message):
             try:
                 Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`\n\n"
                 prog = await m.reply_text(Show)
-                cc = f'**File Name »** {name1} @AS_Multiverse.mp4\n**Batch »** {raw_text0}\n\n**{CR}**'
-                cc1 =f'**File No. »** {str(count).zfill(3)}\n**File Name »** {name1} @AS_Multiverse.pdf\n**Batch »** {raw_text0}\n\n**{CR}**'
+                cc = f'**File Name »** {name1} .mp4\n**Batch »** {raw_text0}\n\n**{CR}**'
+                cc1 =f'**File No. »** {str(count).zfill(3)}\n**File Name »** {name1} .pdf\n**Batch »** {raw_text0}\n\n**{CR}**'
                 if cmd == "pdf" or "drive" in url:
                     try:
                         ka=await helper.download(url,name)
@@ -338,7 +338,7 @@ async def account_login(bot: Client, m: Message):
                         reply = await m.reply_text(f"Uploading - ```{name}```")
                         time.sleep(1)
                         start_time = time.time()
-                        await m.reply_document(ka, caption=f'**File No. »** {str(count).zfill(3)}\n**File Name »** {name1} @AS_Multiverse.pdf\n**Batch »** {raw_text0}\n\n**{CR}**')
+                        await m.reply_document(ka, caption=f'**File No. »** {str(count).zfill(3)}\n**File Name »** {name1} .pdf\n**Batch »** {raw_text0}\n\n**{CR}**')
                         count+=1
                         # time.sleep(1)
                         await reply.delete (True)
