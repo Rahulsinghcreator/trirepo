@@ -29,9 +29,9 @@ import os
 
 bot = Client(
     "bot",
-    bot_token= "5601144746:AAF_Rkf1NBUWeBFT2n2JXvF9kbFl4_8M",
-    api_id= "1354902",
-    api_hash= "e743e5a4f35076e4c558a4b082e9"
+    bot_token= "5601144746:AAF_Rkf1NBUWeBFT2n2Js5UXvF9kbFl4_8M",
+    api_id= "1144902",
+    api_hash= "e743e5a4f35076e4c558a4bd713082e9"
     workers= 6)
 
 
