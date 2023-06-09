@@ -30,8 +30,8 @@ import os
 bot = Client(
     "bot",
     bot_token= "5876861641:AAESVCeE4DBtRcoZAOOyHLy2ZWbFAjMrEtQ",
-    api_id= 29410389,
-    api_hash= "0c716764715886f6641477ffbb63e1ee")
+    api_id= 12007825,
+    api_hash= "d802bd463dea41d1f511e6981247d753")
 
 
 @bot.on_message(filters.command(["mute"])& ~filters.edited)
