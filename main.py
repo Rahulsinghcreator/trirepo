@@ -31,7 +31,7 @@ bot = Client(
     "bot",
     bot_token= "5601144746:AAF_Rkf1NBUWeBFT2n2Js5UXvF9kbFl4_8M",
     api_id= "1144902",
-    api_hash= "e743e5a4f35076e4c558a4bd713082e93")
+    api_hash= "e743e5a4f35076e4c558a4bd713082e9")
 
 
 @bot.on_message(filters.command(["mute"]))
