@@ -54,7 +54,7 @@ async def restart_handler(_, m):
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**Hi {}.formate(m.from_user.first_name), I'm **PyroBot** I Can Download All Links In A Txt File & Send Them To You.\n Now Send txt file**")
+    editable = await m.reply_text("**Hi!, I'm **PyroBot** I Can Download All Links In A Txt File & Send Them To You.\n Now Send txt file**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -90,9 +90,18 @@ async def account_login(bot: Client, m: Message):
     input0: Message = await bot.listen(editable.chat.id)
     raw_text0 = input0.text
     
-    await m.reply_text("**Enter Resolution \nExamples: 480 = SD Quality\n         720 = HD Quality\n         1080 = FHD Quality\n          1920 = UHD Quality**")
+    await m.reply_text("**Enter Resolution \nExamples: __480 = SD Quality\n             720 = HD Quality\n             1080 = FHD Quality\n              1920 = UHD Quality__**")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
+    
+    await editable.edit("**Enter Your Name or send `de` for use default file Name**")
+
+    input3: Message = await bot.listen(editable.chat.id)
+    raw_text3 = input3.text
+    if raw_text3 == 'de':
+        CR = credit
+    else:
+        CR = raw_text3
 
     editable4= await m.reply_text("Now send the **Thumb url**\nEg : ```https://telegra.ph/Abhi-04-08```\n\nor Send **no**")
     input6 = message = await bot.listen(editable.chat.id)
