@@ -38,7 +38,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["mute"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hello im txt file downloader\nPress /pyro to download links listed in a txt file in the format **Name:link**\n\nBot made by PRATIK")
+    editable = await m.reply_text("Hello im txt file downloader\nPress /start to download links listed in a txt file in the format **Name:link**\n\nBot made by PRATIK & Updated By @HxBots")
 
 @bot.on_message(filters.command(["cancel"]))
 async def cancel(_, m):
@@ -52,9 +52,9 @@ async def restart_handler(_, m):
     await m.reply_text("Restarted!", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
-@bot.on_message(filters.command(["nali"]))
+@bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Send txt file**")
+    editable = await m.reply_text("Hi,\n I'm **PyroBot** I Can Download All Links In A Txt File & Send Them To You.\n **Now Send txt file**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -90,11 +90,11 @@ async def account_login(bot: Client, m: Message):
     input0: Message = await bot.listen(editable.chat.id)
     raw_text0 = input0.text
     
-    await m.reply_text("**Enter resolution**")
+    await m.reply_text("**Enter Resolution \nExamples: 480 = SD Quality\n         720 = HD Quality\n         1080 = FHD Quality\n          1920 = UHD Quality**")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
 
-    await editable.edit("**Enter Your Name or send `de` for use default**")
+    await editable.edit("**Enter Your Name or send `de` for use default file Name**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     if raw_text3 == 'de':
