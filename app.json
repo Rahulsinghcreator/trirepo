@@ -1,11 +1,11 @@
 
 {
 
-    "name": "MG",
+    "name": "Txt File DNL",
 
     "description": "A Modular telegram bot.",
 
-    "repository": "https://github.com/imacekun/pyrotxt",
+    "repository": "https://github.com/oVo-HxBots/pyrotxt",
     "buildpacks":[
         {
             "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
@@ -31,7 +31,7 @@
 
         "BOT_TOKEN": {
 
-      "value":"5924735820:AAGDPiM3DuYmkXEGUNpsoWQxPd3qrcep4Qg",
+      "value":"6557888895:AfyujbAr677uhgrr67gcz",
 
             "description": "Your Bot token from @Botfather"
 
@@ -53,29 +53,13 @@
 
          },
 
-         "GROUPS": {
-
-      "value":"-1001936874635",
-
-            "description": "Telegram User group ids"
-
-         },
-    
-         "AUTH_USERS": {
-
-      "value":"5917311887",
-
-             "description": "id's of the telegram users, who you want to allow for multitasking - downloading multiple links at once! In heroku separate the ids by space. (don't put commas. Only separate each of the id's with space"
-
-        },
-
     "OWNER_ID": {
 
-      "description": "who will use this bot",
+      "description": "Owner Id for use of /restart command",
 
-      "value":"5917311887",
+      "value":"6181884616",
 
-      "required": false
+      "required": true
 
         }
 
