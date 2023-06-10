@@ -38,7 +38,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["help"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hello im txt file downloader\n\nPress /start to download links listed in a txt file in the format **Name:link**\n\nBot made by PRATIK & Updated By @HxBots\n\n**Steps To Use Bot:**\n **1:** Send /start & then send your .txt file.\n **2:** Now Send From Where You Want To Download Initial is 0 .\n **3:** Now Send Your File Name or Use 'de' For Use Default File Name.\n **4:** Now Send Resolution In Which Quality You Want.\n *5:** Now Againg Send /start.\n **6:** Now Send Custom Thum URL or Send 'no'To Use Defalut Thumbnail.\n **7:** Now Wait Bot will Download & Upload Your Videos.)
+    editable = await m.reply_text("Hello im txt file downloader\n\n**Steps To Use Bot:**\n **1:** Send /start & then send your .txt file.\n **2:** Now Send From Where You Want To Download Initial is 0 .\n **3:** Now Send Your File Name or Use 'de' For Use Default File Name.\n **4:** Now Send Resolution In Which Quality You Want.\n *5:** Now Againg Send /start.\n **6:** Now Send Custom Thum URL or Send 'no'To Use Defalut Thumbnail.\n **7:** Now Wait Bot will Download & Upload Your Videos.\n\nBot made by PRATIK & Updated By @HxBots")
 
 @bot.on_message(filters.command(["cancel"]))
 async def cancel(_, m):
@@ -54,7 +54,7 @@ async def restart_handler(_, m):
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**Hi!, I'm **PyroBot** I Can Download All Links In A Txt File & Send Them To You.\n Now Send txt file**")
+    editable = await m.reply_text("**Hi!, I'm PyroBot. I Can Download All Links In A Txt File & Send Them To You.\nUse /help To Get Some Help 😉\n Now Send .txt file**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
