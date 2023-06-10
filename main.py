@@ -25,13 +25,14 @@ from pyrogram.types import User, Message
 import sys
 import re
 import os
+from os import environ
 # import pycurl
 
 bot = Client(
     "bot",
-    bot_token= "5601144746:AAF_Rkf1NBUWeBFT2n2Js5UXvF9kbFl4_8M",
-    api_id= "1144902",
-    api_hash= "e743e5a4f35076e4c558a4bd713082e9",
+    bot_token = environ.get('BOT_TOKEN'),
+    api_id = environ.get('API_ID'),
+    api_hash = environ.get('API_HASH),
     workers= 6)
 
 
