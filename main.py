@@ -26,14 +26,13 @@ import sys
 import re
 import os
 from os import environ
-from Config import BOT_TOKEN, API_HASH, API_ID 
 # import pycurl
 
 bot = Client(
     "bot",
-    bot_token=BOT_TOKEN,
-    api_id=API_ID,
-    api_hash=API_HASH,
+    bot_token=environ.get('BOT_TOKEN'), 
+    api_id=int(environ.get('API_ID')), 
+    api_hash=environ.get('API_HASH'),
     workers= 6)
 
 
