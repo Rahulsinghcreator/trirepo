@@ -26,7 +26,7 @@ import sys
 import re
 import os
 from os import environ
-from config import BOT_TOKEN, API_HASH, API_ID 
+from Config import BOT_TOKEN, API_HASH, API_ID 
 # import pycurl
 
 bot = Client(
