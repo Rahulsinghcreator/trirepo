@@ -38,7 +38,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["help"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hello im txt file downloader\n\n**Steps To Use Bot:**\n **1:** Send /start & then send your .txt file.\n **2:** Now Send From Where You Want To Download Initial is 0 .\n **3:** Now Send Your File Name or Use 'de' For Use Default File Name.\n **4:** Now Send Resolution In Which Quality You Want.\n *5:** Now Againg Send /start.\n **6:** Now Send Custom Thum URL or Send 'no'To Use Defalut Thumbnail.\n **7:** Now Wait Bot will Download & Upload Your Videos.\n\nBot made by PRATIK & Updated By @HxBots")
+    editable = await m.reply_text("Hello im txt file downloader\n\n**Steps To Use Bot:**\n **1:** Send /start & then send your .txt file.\n **2:** Now Send From Where You Want To Download Initial is 0 .\n **3:** Now Send Your File Name or Use 'de' For Use Default File Name.\n **4:** Now Send Resolution In Which Quality You Want.\n **5:** Now Againg Send /start.\n **6:** Now Send Custom Thum URL or Send 'no'To Use Defalut Thumbnail.\n **7:** Now Wait Bot will Download & Upload Your Videos.\n\nBot made by PRATIK & Updated By @HxBots")
 
 @bot.on_message(filters.command(["cancel"]))
 async def cancel(_, m):
