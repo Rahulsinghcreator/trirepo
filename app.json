@@ -31,7 +31,7 @@
 
         "BOT_TOKEN": {
 
-      "value":"6557888895:AfyujbAr677uhgrr67gcz",
+      "value":"6949453579:AAFH9h_FMMAits1HrLzpson5O2XwiEMpl1w",
 
             "description": "Your Bot token from @Botfather"
 
@@ -39,7 +39,7 @@
 
         "API_ID": {
 
-      "value":"29410389",
+      "value":"29403305",
 
             "description": "Your API_ID from https://my.telegram.org/apps"
 
@@ -47,7 +47,7 @@
 
         "API_HASH": {
 
-      "value":"0c716764715886f6641477ffbb63e1ee",
+      "value":"54c435573d0f2d9dada270a0cb493b36",
 
             "description": "Your API_HASH from https://my.telegram.org/apps"
 
@@ -57,7 +57,7 @@
 
       "description": "Owner Id for use of /restart command",
 
-      "value":"6181884616",
+      "value":"6381511858",
 
       "required": true
 
