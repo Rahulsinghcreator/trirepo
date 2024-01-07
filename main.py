@@ -38,7 +38,7 @@ bot = Client(
 
 @bot.on_message(filters.command(["help"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hello Im txt File Downloader\n\n**Steps To Use Bot:**\n **1:** Send /start & then send your .txt file.\n **2:** Now Send From Where You Want To    Download Initial is 0 .\n **3:** Now Send Your File Name or Use 'de' For.  Use Default File Name.\n **4:** Now Send Resolution In Which Quality    You Want.\n **5:** Now Againg Send /start.\n **6:** Now Send Custom Thum URL or    Send 'no'To Use Defalut Thumbnail.\n **7:** Now Wait Bot will Download & Upload Your    Videos.\n\n**Bot made by PRATIK & Updated By @HxBots**")
+    editable = await m.reply_text("Hello Im txt File Downloader\n\n**Steps To Use Bot:**\n **1:** Send /start & then send your .txt file.\n **2:** Now Send From Where You Want To    Download Initial is 0 .\n **3:** Now Send Your File Name or Use 'de' For.  Use Default File Name.\n **4:** Now Send Resolution In Which Quality    You Want.\n **5:** Now Againg Send /start.\n **6:** Now Send Custom Thum URL or    Send 'no'To Use Defalut Thumbnail.\n **7:** Now Wait Bot will Download & Upload Your    Videos.\n\n**Bot made by 🅰🅸🆁 🅿🅷🅴🅾🅽🅸🆇**")
 
 @bot.on_message(filters.command(["cancel"]))
 async def cancel(_, m):
@@ -312,8 +312,8 @@ async def account_login(bot: Client, m: Message):
             try:
                 Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`\n\n"
                 prog = await m.reply_text(Show)
-                cc = f'**File Name »** {name1} @AS_Multiverse.mp4\n**Batch »** {raw_text0}\n\n**{CR}**'
-                cc1 =f'**File No. »** {str(count).zfill(3)}\n**File Name »** {name1} @AS_Multiverse.pdf\n**Batch »** {raw_text0}\n\n**{CR}**'
+                cc = f'**File Name »** {name1} 🅰🅸🆁 🅿🅷🅴🅾🅽🅸🆇.mp4\n**Batch »** {raw_text0}\n\n**{CR}**'
+                cc1 =f'**File No. »** {str(count).zfill(3)}\n**File Name »** {name1} 🅰🅸🆁 🅿🅷🅴🅾🅽🅸🆇.pdf\n**Batch »** {raw_text0}\n\n**{CR}**'
                 if cmd == "pdf" or "drive" in url:
                     try:
                         ka=await helper.download(url,name)
@@ -341,7 +341,7 @@ async def account_login(bot: Client, m: Message):
                         reply = await m.reply_text(f"Uploading - ```{name}```")
                         time.sleep(1)
                         start_time = time.time()
-                        await m.reply_document(ka, caption=f'**File No. »** {str(count).zfill(3)}\n**File Name »** {name1} @AS_Multiverse.pdf\n**Batch »** {raw_text0}\n\n**{CR}**')
+                        await m.reply_document(ka, caption=f'**File No. »** {str(count).zfill(3)}\n**File Name »** {name1} 🅰🅸🆁 🅿🅷🅴🅾🅽🅸🆇.pdf\n**Batch »** {raw_text0}\n\n**{CR}**')
                         count+=1
                         # time.sleep(1)
                         await reply.delete (True)
