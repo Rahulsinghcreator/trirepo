@@ -45,7 +45,7 @@ async def cancel(_, m):
     editable = await m.reply_text("Canceling All process Plz wait")
     global cancel
     cancel = True
-    await editable.edit("cancled")
+    await editable.edit("cancelled")
     return
 @bot.on_message(filters.command("restart"))
 async def restart_handler(_, m):
@@ -54,7 +54,7 @@ async def restart_handler(_, m):
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**Hi!, I'm PyroBot. I Can Download All Links In A Txt File & Send Them To You.\n\nUse /help To Get Some Help 😉\n\n Now Send .txt file**")
+    editable = await m.reply_text("**Hi!, I'm PyroBot. \n\nI Can Download All Links In A Txt File & Send Them To You.\n\nUse /help To Get Some Help 😉\n\n Now Send .txt file\n\n BOT MODIFIED BY 『🅰🅸🆁 🅿🅷🅴🅾🅽🅸🆇™』**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -90,7 +90,7 @@ async def account_login(bot: Client, m: Message):
     input0: Message = await bot.listen(editable.chat.id)
     raw_text0 = input0.text
     
-    await m.reply_text("**Enter Resolution \nExamples: __480 = SD Quality\n             720 = HD Quality\n             1080 = FHD Quality\n              1920 = UHD Quality__**")
+    await m.reply_text("**Enter Resolution \n|nExamples: __480 = SD Quality\n             720 = HD Quality\n             1080 = FHD Quality\n              1920 = UHD Quality__**")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     
